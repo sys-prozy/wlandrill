@@ -1,2 +1,2 @@
 # wlandrill
-![image](https://github.com/sys-prozy/wlandrill/blob/main/logo.png | width=100)
+<img src="https://github.com/sys-prozy/wlandrill/blob/main/logo.png" alt="image" width="300"/>
