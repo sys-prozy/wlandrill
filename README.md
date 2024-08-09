@@ -8,3 +8,6 @@ Wlan Drill
 
  # 
 # Credits
+
+*  Jerimah1 (for designs)
+*  stone (programmer and owner)
