@@ -11,3 +11,8 @@ Wlan Drill
 
 *  Jerimah1 (for designs)
 *  stone (programmer and owner)
+ #
+# supports
+## now only for linux,
+support for windows soon*
+
