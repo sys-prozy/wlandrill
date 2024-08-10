@@ -13,6 +13,6 @@ Wlan Drill
 *  stone (programmer and owner)
  #
 # supports
-## now only for linux,
+## now only for linux,  <img src="https://github.com/sys-prozy/wlandrill/blob/main/imgs/linux.png" alt="image" width="50"/>
 support for windows soon*
 
