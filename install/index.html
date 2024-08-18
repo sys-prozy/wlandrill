@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wlandrill</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgb(10, 2, 27);
+        color: white;
+        position: relative;
+        overflow: hidden;
+        height: 100vh; /* Ensure body takes full viewport height */
+    }
+    .header {
+            background-color: red;
+            height: 10vh; /* Responsive header height */
+            display: flex;
+            align-items: center;
+            padding: 0 5vw; /* Responsive padding */
+            position: relative;
+            z-index: 10;
+        }
+        .header img {
+            height: 80%;
+            position: absolute;
+            top: 10%;
+            left: 2vw;
+        }
+        .header .nav-buttons {
+            display: flex;
+            gap: 2vw; /* Responsive gap between buttons */
+            position: absolute;
+            right: 5vw;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .header .nav-button, .header .center-button {
+            background: none;
+            border: none;
+            color: black;
+            font-size: 1.2rem; /* Responsive font size */
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+        }
+        .header .nav-button:hover, .header .center-button:hover {
+            color: white;
+            text-shadow: none;
+        }
+        .header .center-buttons {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 2vw; /* Responsive gap between buttons */
+        }
+        .background-logo {
+            position: absolute;
+            top: calc(10vh + 5vh);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40vw; /* Responsive width */
+            max-width: none;
+            opacity: 1;
+            z-index: 1;
+        }
+        .content {
+            position: absolute;
+            top: calc(10vh + 5vh + 20vh);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            text-align: center;
+            padding: 0 5vw; /* Responsive padding */
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2vw; /* Responsive gap between buttons */
+        }
+        .button {
+            background-color: rgba(0, 123, 255, 0.2);
+            color: #007bff;
+            border: 2px solid #007bff;
+            padding: 1rem 2rem;
+            font-size: 1.2rem; /* Responsive font size */
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1vw; /* Responsive gap between icon and text */
+            transition: opacity 0.3s, box-shadow 0.3s, color 0.3s;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: bold;
+        }
+        .button.github {
+            background-color: rgba(51, 51, 51, 0.2);
+            color: #333;
+            border: 2px solid #333;
+        }
+        .button:hover {
+            background-color: #007bff;
+            color: white;
+            border-color: #0056b3;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+            text-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+        }
+        .button.github:hover {
+            background-color: #333;
+            color: white;
+            border-color: #000;
+            box-shadow: 0 0 10px rgba(51, 51, 51, 0.6);
+            text-shadow: 0 0 5px rgba(51, 51, 51, 0.8);
+        }
+        .icon {
+            width: 4vw; /* Responsive icon size */
+            height: auto;
+        }
+        .top-left-paragraph {
+            position: absolute;
+            top: 10vh;
+            left: 2vw;
+            color: white;
+            font-size: 1.2rem; /* Responsive font size */
+            z-index: 10;
+        }
+        .bottom-link {
+            position: absolute;
+            bottom: 5vh;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem; /* Responsive font size */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+        .bottom-link:hover {
+            text-shadow: none;
+        }
+    </style>
+    </head>
+    <body>
+<div class="header">
+    <img src="https://raw.githubusercontent.com/sys-prozy/wlandrill/main/imgs/logo.png" alt="Logo">
+    <div class="center-buttons">
+        <a href="#" class="center-button">Home</a>
+    </div>
+    <div class="nav-buttons">
+        <a href="https://discord.com" class="nav-button">Discord</a>
+        <a href="#" class="nav-button">Help</a>
+        <a href="#" class="nav-button">Apply</a>
+        <a href="#" class="nav-button">Source Code</a>
+    </div>
+</div>
