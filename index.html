@@ -12,44 +12,44 @@
             color: white;
             position: relative;
             overflow: hidden;
-            height: 100vh; /* Ensure body takes full viewport height */
+            min-height: 100vh; /* Ensure body takes full viewport height */
         }
         .header {
             background-color: red;
-            height: 60px;
+            height: 10vh; /* Responsive header height */
             display: flex;
             align-items: center;
-            padding: 0 20px;
+            padding: 0 5vw; /* Responsive padding */
             position: relative;
             z-index: 10;
         }
         .header img {
             height: 80%;
             position: absolute;
-            top: 10px;
-            left: 20px;
+            top: 10%;
+            left: 2vw;
         }
         .header .nav-buttons {
             display: flex;
-            gap: 15px;
+            gap: 2vw; /* Responsive gap between buttons */
             position: absolute;
-            right: 20px;
+            right: 5vw;
             top: 50%;
             transform: translateY(-50%);
         }
-        .header .nav-button {
+        .header .nav-button, .header .center-button {
             background: none;
             border: none;
             color: black;
-            font-size: 16px;
+            font-size: 1.2rem; /* Responsive font size */
             cursor: pointer;
-            padding: 5px 10px;
+            padding: 0.5rem 1rem;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s, text-shadow 0.3s;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
         }
-        .header .nav-button:hover {
+        .header .nav-button:hover, .header .center-button:hover {
             color: white;
             text-shadow: none;
         }
@@ -58,59 +58,44 @@
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            gap: 15px;
-        }
-        .header .center-button {
-            background: none;
-            border: none;
-            color: black;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 5px 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s, text-shadow 0.3s;
-            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-        }
-        .header .center-button:hover {
-            color: white;
-            text-shadow: none;
+            gap: 2vw; /* Responsive gap between buttons */
         }
         .background-logo {
             position: absolute;
-            top: calc(60px + 50px);
+            top: calc(10vh + 5vh);
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 40%;
+            width: 40vw; /* Responsive width */
             max-width: none;
             opacity: 1;
             z-index: 1;
         }
         .content {
             position: absolute;
-            top: calc(60px + 50px + 100px + 30px);
+            top: calc(10vh + 5vh + 20vh);
             left: 50%;
             transform: translateX(-50%);
             z-index: 10;
             text-align: center;
+            padding: 0 5vw; /* Responsive padding */
         }
         .buttons {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 2vw; /* Responsive gap between buttons */
         }
         .button {
             background-color: rgba(0, 123, 255, 0.2);
             color: #007bff;
             border: 2px solid #007bff;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 1rem 2rem;
+            font-size: 1.2rem; /* Responsive font size */
             cursor: pointer;
             border-radius: 5px;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 1vw; /* Responsive gap between icon and text */
             transition: opacity 0.3s, box-shadow 0.3s, color 0.3s;
             box-shadow: none;
             text-shadow: none;
@@ -136,27 +121,27 @@
             text-shadow: 0 0 5px rgba(51, 51, 51, 0.8);
         }
         .icon {
-            width: 20px;
-            height: 20px;
+            width: 4vw; /* Responsive icon size */
+            height: auto;
         }
         .top-left-paragraph {
             position: absolute;
-            top: 100px;
-            left: 20px;
+            top: 10vh;
+            left: 2vw;
             color: white;
-            font-size: 14px;
+            font-size: 1.2rem; /* Responsive font size */
             z-index: 10;
         }
         .bottom-link {
             position: absolute;
-            bottom: 20px;
+            bottom: 5vh;
             left: 50%;
             transform: translateX(-50%);
             z-index: 10;
             color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 1.2rem; /* Responsive font size */
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
         }
         .bottom-link:hover {
