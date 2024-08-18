@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wlandrill</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(10, 2, 27);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            height: 100vh; /* Ensure body takes full viewport height */
+        }
+        .header {
+            background-color: red;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        .header img {
+            height: 80%;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        .header .nav-buttons {
+            display: flex;
+            gap: 15px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .header .nav-button {
+            background: none;
+            border: none;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+        }
+        .header .nav-button:hover {
+            color: white;
+            text-shadow: none;
+        }
+        .header .center-buttons {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+        }
+        .header .center-button {
+            background: none;
+            border: none;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+        }
+        .header .center-button:hover {
+            color: white;
+            text-shadow: none;
+        }
+        .background-logo {
+            position: absolute;
+            top: calc(60px + 50px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            max-width: none;
+            opacity: 1;
+            z-index: 1;
+        }
+        .content {
+            position: absolute;
+            top: calc(60px + 50px + 100px + 30px);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            text-align: center;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            background-color: rgba(0, 123, 255, 0.2);
+            color: #007bff;
+            border: 2px solid #007bff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: opacity 0.3s, box-shadow 0.3s, color 0.3s;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: bold;
+        }
+        .button.github {
+            background-color: rgba(51, 51, 51, 0.2);
+            color: #333;
+            border: 2px solid #333;
+        }
+        .button:hover {
+            background-color: #007bff;
+            color: white;
+            border-color: #0056b3;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+            text-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+        }
+        .button.github:hover {
+            background-color: #333;
+            color: white;
+            border-color: #000;
+            box-shadow: 0 0 10px rgba(51, 51, 51, 0.6);
+            text-shadow: 0 0 5px rgba(51, 51, 51, 0.8);
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+        .top-left-paragraph {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            color: white;
+            font-size: 14px;
+            z-index: 10;
+        }
+        .bottom-link {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+        .bottom-link:hover {
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/sys-prozy/wlandrill/main/imgs/logo.png" alt="Logo">
+        <div class="center-buttons">
+            <a href="#" class="center-button">Get Wlandrill</a>
+            <a href="#" class="center-button">Home</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="https://discord.com" class="nav-button">Discord</a>
+            <a href="#" class="nav-button">Help</a>
+            <a href="#" class="nav-button">Apply</a>
+            <a href="#" class="nav-button">Source Code</a>
+        </div>
+    </div>
+
+    <img src="https://raw.githubusercontent.com/sys-prozy/wlandrill/main/imgs/whiteweblogo.png" alt="Background Logo" class="background-logo">
+
+    <div class="content">
+        <h1>documentation</h1>
+        <div class="buttons">
+            <a href="#" class="button">
+                <img src="https://raw.githubusercontent.com/sys-prozy/wlandrill/main/imgs/web-sym.png" alt="Download Icon" class="icon">
+                Download
+            </a>
+            <a href="https://github.com/sys-prozy/wlandrill" class="button github">
+                GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="top-left-paragraph">
+        <p>Welcome to a modern aircrack-ng gui for linux.
+            <br>
+     made with python, (tinker) and a skid,
+     <br>
+     including a site with support and tickets,
+     <br>
+     with a ui, i present,
+        </p>
+        <h3>WLAN-DRILL</h3>
+    </div>
+
+    <a href="https://www.aircrack-ng.org" class="bottom-link">
+        Aircrack-ng
+    </a>
+
+</body>
+</html>
